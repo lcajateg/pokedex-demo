@@ -1,14 +1,15 @@
-package com.example.pokedex
+package com.example.pokedex.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.pokedex.R
 import com.example.pokedex.model.Pokemon
 
 class RVPokemonAdapter(
-    private val pokemonList: MutableList<Pokemon>
+    private val pokemonList: List<Pokemon>
 ) : RecyclerView.Adapter<RVPokemonAdapter.PokemonViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PokemonViewHolder {
