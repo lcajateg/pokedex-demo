@@ -4,17 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".controller.PokedexActivity">
+    tools:context=".controller.PokemonDetailFragment">
 
-
-    <fragment
-        class="com.example.pokedex.controller.PokemonListFragment"
-        android:id="@+id/fragment_list"
-        android:name="com.example.pokedex.controller.PokemonListFragment"
+    <TextView
+        style=""
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Nombre del pokemon"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

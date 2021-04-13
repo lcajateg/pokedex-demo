@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".controller.PokedexActivity">
+    tools:context=".controller.PokemonListFragment">
 
-
-    <fragment
-        class="com.example.pokedex.controller.PokemonListFragment"
-        android:id="@+id/fragment_list"
-        android:name="com.example.pokedex.controller.PokemonListFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_pokemon_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:itemCount="10"
+        tools:listitem="@layout/item_pokemon" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
